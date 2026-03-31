@@ -1,0 +1,217 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - heading "Premium Products" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Browse our curated collection of premium products.
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - img [ref=e10]
+        - generic [ref=e13]: Search products
+        - searchbox "Search products by name or description" [ref=e14]
+      - generic [ref=e15]: Filter by category
+      - combobox "Filter by category" [ref=e16] [cursor=pointer]:
+        - option "All Categories" [selected]
+        - option "Electronics"
+        - option "Clothing"
+        - option "Home"
+        - option "Outdoors"
+      - status [ref=e17]:
+        - img [ref=e18]
+        - generic [ref=e22]: 154 products found
+    - main [ref=e23]:
+      - list "Product listing" [ref=e24]:
+        - listitem [ref=e25]:
+          - article "Premium Product 1" [ref=e26]:
+            - generic [ref=e27]:
+              - img "Premium Product 1" [ref=e28]
+              - generic [ref=e29]: Electronics
+              - generic [ref=e30]: Only 3 left
+            - generic [ref=e31]:
+              - heading "Premium Product 1" [level=3] [ref=e32]
+              - paragraph [ref=e33]: This is a detailed description for Premium Product 1. It features exceptional quality and design, perfect for modern needs.
+              - generic [ref=e34]:
+                - generic [ref=e35]:
+                  - generic [ref=e36]: $240
+                  - text: ".00"
+                - button "Add Premium Product 1 to cart" [ref=e37] [cursor=pointer]:
+                  - img [ref=e38]
+                  - text: Add
+        - listitem [ref=e42]:
+          - article "Premium Product 2" [ref=e43]:
+            - generic [ref=e44]:
+              - img "Premium Product 2" [ref=e45]
+              - generic [ref=e46]: Electronics
+            - generic [ref=e47]:
+              - heading "Premium Product 2" [level=3] [ref=e48]
+              - paragraph [ref=e49]: This is a detailed description for Premium Product 2. It features exceptional quality and design, perfect for modern needs.
+              - generic [ref=e50]:
+                - generic [ref=e51]:
+                  - generic [ref=e52]: $411
+                  - text: ".00"
+                - button "Add Premium Product 2 to cart" [ref=e53] [cursor=pointer]:
+                  - img [ref=e54]
+                  - text: Add
+        - listitem [ref=e58]:
+          - article "Premium Product 3" [ref=e59]:
+            - generic [ref=e60]:
+              - img "Premium Product 3" [ref=e61]
+              - generic [ref=e62]: Home
+            - generic [ref=e63]:
+              - heading "Premium Product 3" [level=3] [ref=e64]
+              - paragraph [ref=e65]: This is a detailed description for Premium Product 3. It features exceptional quality and design, perfect for modern needs.
+              - generic [ref=e66]:
+                - generic [ref=e67]:
+                  - generic [ref=e68]: $231
+                  - text: ".00"
+                - button "Add Premium Product 3 to cart" [ref=e69] [cursor=pointer]:
+                  - img [ref=e70]
+                  - text: Add
+        - listitem [ref=e74]:
+          - article "Premium Product 4" [ref=e75]:
+            - generic [ref=e76]:
+              - img "Premium Product 4" [ref=e77]
+              - generic [ref=e78]: Electronics
+            - generic [ref=e79]:
+              - heading "Premium Product 4" [level=3] [ref=e80]
+              - paragraph [ref=e81]: This is a detailed description for Premium Product 4. It features exceptional quality and design, perfect for modern needs.
+              - generic [ref=e82]:
+                - generic [ref=e83]:
+                  - generic [ref=e84]: $340
+                  - text: ".00"
+                - button "Add Premium Product 4 to cart" [ref=e85] [cursor=pointer]:
+                  - img [ref=e86]
+                  - text: Add
+        - listitem [ref=e90]:
+          - article "Premium Product 5" [ref=e91]:
+            - generic [ref=e92]:
+              - img "Premium Product 5" [ref=e93]
+              - generic [ref=e94]: Outdoors
+            - generic [ref=e95]:
+              - heading "Premium Product 5" [level=3] [ref=e96]
+              - paragraph [ref=e97]: This is a detailed description for Premium Product 5. It features exceptional quality and design, perfect for modern needs.
+              - generic [ref=e98]:
+                - generic [ref=e99]:
+                  - generic [ref=e100]: $368
+                  - text: ".00"
+                - button "Add Premium Product 5 to cart" [ref=e101] [cursor=pointer]:
+                  - img [ref=e102]
+                  - text: Add
+        - listitem [ref=e106]:
+          - article "Premium Product 6" [ref=e107]:
+            - generic [ref=e108]:
+              - img "Premium Product 6" [ref=e109]
+              - generic [ref=e110]: Electronics
+            - generic [ref=e111]:
+              - heading "Premium Product 6" [level=3] [ref=e112]
+              - paragraph [ref=e113]: This is a detailed description for Premium Product 6. It features exceptional quality and design, perfect for modern needs.
+              - generic [ref=e114]:
+                - generic [ref=e115]:
+                  - generic [ref=e116]: $238
+                  - text: ".00"
+                - button "Add Premium Product 6 to cart" [ref=e117] [cursor=pointer]:
+                  - img [ref=e118]
+                  - text: Add
+        - listitem [ref=e122]:
+          - article "Premium Product 7" [ref=e123]:
+            - generic [ref=e124]:
+              - img "Premium Product 7" [ref=e125]
+              - generic [ref=e126]: Outdoors
+            - generic [ref=e127]:
+              - heading "Premium Product 7" [level=3] [ref=e128]
+              - paragraph [ref=e129]: This is a detailed description for Premium Product 7. It features exceptional quality and design, perfect for modern needs.
+              - generic [ref=e130]:
+                - generic [ref=e131]:
+                  - generic [ref=e132]: $454
+                  - text: ".00"
+                - button "Add Premium Product 7 to cart" [ref=e133] [cursor=pointer]:
+                  - img [ref=e134]
+                  - text: Add
+        - listitem [ref=e138]:
+          - article "Premium Product 8" [ref=e139]:
+            - generic [ref=e140]:
+              - img "Premium Product 8" [ref=e141]
+              - generic [ref=e142]: Electronics
+              - generic [ref=e143]: Only 3 left
+            - generic [ref=e144]:
+              - heading "Premium Product 8" [level=3] [ref=e145]
+              - paragraph [ref=e146]: This is a detailed description for Premium Product 8. It features exceptional quality and design, perfect for modern needs.
+              - generic [ref=e147]:
+                - generic [ref=e148]:
+                  - generic [ref=e149]: $394
+                  - text: ".00"
+                - button "Add Premium Product 8 to cart" [ref=e150] [cursor=pointer]:
+                  - img [ref=e151]
+                  - text: Add
+        - listitem [ref=e155]:
+          - article "Premium Product 9" [ref=e156]:
+            - generic [ref=e157]:
+              - img "Premium Product 9" [ref=e158]
+              - generic [ref=e159]: Outdoors
+            - generic [ref=e160]:
+              - heading "Premium Product 9" [level=3] [ref=e161]
+              - paragraph [ref=e162]: This is a detailed description for Premium Product 9. It features exceptional quality and design, perfect for modern needs.
+              - generic [ref=e163]:
+                - generic [ref=e164]:
+                  - generic [ref=e165]: $536
+                  - text: ".00"
+                - button "Add Premium Product 9 to cart" [ref=e166] [cursor=pointer]:
+                  - img [ref=e167]
+                  - text: Add
+        - listitem [ref=e171]:
+          - article "Premium Product 10" [ref=e172]:
+            - generic [ref=e173]:
+              - img "Premium Product 10" [ref=e174]
+              - generic [ref=e175]: Electronics
+            - generic [ref=e176]:
+              - heading "Premium Product 10" [level=3] [ref=e177]
+              - paragraph [ref=e178]: This is a detailed description for Premium Product 10. It features exceptional quality and design, perfect for modern needs.
+              - generic [ref=e179]:
+                - generic [ref=e180]:
+                  - generic [ref=e181]: $183
+                  - text: ".00"
+                - button "Add Premium Product 10 to cart" [ref=e182] [cursor=pointer]:
+                  - img [ref=e183]
+                  - text: Add
+        - listitem [ref=e187]:
+          - article "Premium Product 11" [ref=e188]:
+            - generic [ref=e189]:
+              - img "Premium Product 11" [ref=e190]
+              - generic [ref=e191]: Outdoors
+            - generic [ref=e192]:
+              - heading "Premium Product 11" [level=3] [ref=e193]
+              - paragraph [ref=e194]: This is a detailed description for Premium Product 11. It features exceptional quality and design, perfect for modern needs.
+              - generic [ref=e195]:
+                - generic [ref=e196]:
+                  - generic [ref=e197]: $463
+                  - text: ".00"
+                - button "Add Premium Product 11 to cart" [ref=e198] [cursor=pointer]:
+                  - img [ref=e199]
+                  - text: Add
+        - listitem [ref=e203]:
+          - article "Premium Product 12" [ref=e204]:
+            - generic [ref=e205]:
+              - img "Premium Product 12" [ref=e206]
+              - generic [ref=e207]: Electronics
+            - generic [ref=e208]:
+              - heading "Premium Product 12" [level=3] [ref=e209]
+              - paragraph [ref=e210]: This is a detailed description for Premium Product 12. It features exceptional quality and design, perfect for modern needs.
+              - generic [ref=e211]:
+                - generic [ref=e212]:
+                  - generic [ref=e213]: $478
+                  - text: ".00"
+                - button "Add Premium Product 12 to cart" [ref=e214] [cursor=pointer]:
+                  - img [ref=e215]
+                  - text: Add
+      - generic [ref=e219]:
+        - navigation "Pagination" [ref=e220]:
+          - button "Previous page" [disabled] [ref=e221]:
+            - img [ref=e222]
+          - button "Go to page 1" [disabled] [ref=e224]: "1"
+          - button "Go to page 2" [ref=e225] [cursor=pointer]: "2"
+          - generic [ref=e226]: ...
+          - button "Go to page 13" [ref=e227] [cursor=pointer]: "13"
+          - button "Next page" [ref=e228] [cursor=pointer]:
+            - img [ref=e229]
+        - paragraph [ref=e231]: Page 1 of 13

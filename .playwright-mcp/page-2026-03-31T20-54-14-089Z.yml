@@ -1,0 +1,23 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - heading "Premium Products" [level=1] [ref=e6]
+      - paragraph [ref=e7]: Browse our curated collection of premium products.
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - img [ref=e10]
+        - generic [ref=e13]: Search products
+        - searchbox "Search products by name or description" [ref=e14]
+      - generic [ref=e15]: Filter by category
+      - combobox "Filter by category" [ref=e16] [cursor=pointer]:
+        - option "All Categories" [selected]
+        - option "Electronics"
+        - option "Clothing"
+        - option "Home"
+        - option "Outdoors"
+      - status
+    - main [ref=e17]:
+      - status "Loading products" [ref=e19]:
+        - generic [ref=e128]: Loading products...

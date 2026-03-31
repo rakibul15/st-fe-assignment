@@ -44,7 +44,7 @@ export const api = {
 
     const total = filteredData.length;
     const totalPages = Math.ceil(total / limit);
-    
+
     const startIndex = (page - 1) * limit;
     const endIndex = startIndex + limit;
     const paginatedData = filteredData.slice(startIndex, endIndex);

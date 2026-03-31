@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+/* Font loaded via <link preload> in index.html — no @import here */
 
 @tailwind base;
 @tailwind components;
@@ -14,6 +14,11 @@
   --text-muted: #64748b;
   --border: rgba(0, 0, 0, 0.1);
   --error: #ef4444;
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-card-bg: rgba(255, 255, 255, 0.6);
+  --shadow-color: rgba(0, 0, 0, 0.05);
+  --shimmer-from: rgba(226, 232, 240, 0.6);
+  --shimmer-via: rgba(241, 245, 249, 0.8);
 }
 
 * {
@@ -31,30 +36,56 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Skip to content — accessibility */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  z-index: 100;
+  padding: 8px 16px;
+  background: var(--primary);
+  color: white;
+  border-radius: 0 0 8px 8px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+
+.skip-to-content:focus {
+  left: 16px;
+  top: 0;
+}
+
+/* Focus-visible ring for keyboard navigation */
+*:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 /* Glassmorphism Utilities */
 .glass-panel {
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--glass-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 30px var(--shadow-color);
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.6);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: var(--glass-card-bg);
   border: 1px solid var(--border);
   border-radius: 12px;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Only animate transform + shadow — skip background to avoid repaint */
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
 }
 
 .glass-card:hover {
   transform: translateY(-4px);
-  background: rgba(255, 255, 255, 0.9);
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.12);
 }
 
 /* Button Reset & Base */
@@ -96,4 +127,22 @@ button {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #333954;
+}
+
+/* Skeleton shimmer animation */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-pulse {
+  animation: none !important;
+  background: linear-gradient(
+    90deg,
+    var(--shimmer-from) 25%,
+    var(--shimmer-via) 50%,
+    var(--shimmer-from) 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s ease-in-out infinite !important;
 }

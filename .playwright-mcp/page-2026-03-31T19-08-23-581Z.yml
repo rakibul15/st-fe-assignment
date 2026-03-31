@@ -1,0 +1,20 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Premium Products" [level=1] [ref=e5]
+    - paragraph [ref=e6]: Browse our curated collection of premium products.
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - img [ref=e9]
+      - generic [ref=e12]: Search products
+      - searchbox "Search products by name or description" [ref=e13]
+    - generic [ref=e14]: Filter by category
+    - combobox "Filter by category" [ref=e15] [cursor=pointer]:
+      - option "All Categories" [selected]
+      - option "Electronics"
+      - option "Clothing"
+      - option "Home"
+      - option "Outdoors"
+    - status
+  - main [ref=e16]:
+    - status "Loading products" [ref=e18]:
+      - generic [ref=e127]: Loading products...
