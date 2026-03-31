@@ -142,10 +142,3 @@ export function prefetchProducts(params: FetchProductsParams): void {
     .catch(() => { /* silent */ })
     .finally(() => inflight.delete(key));
 }
-
-/**
- * Check if a set of params has fresh cached data.
- */
-export function hasFreshCache(params: FetchProductsParams): boolean {
-  return cache.isFresh(buildKey(params));
-}
