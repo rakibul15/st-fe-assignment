@@ -43,11 +43,16 @@ I used a **feature-based architecture** with a custom `useProducts` hook that or
 - URL-synced state for bookmarkable/shareable views
 - Stale-while-revalidate + stale-while-error caching
 - Image prefetching and LCP optimization (eager loading for above-fold images)
-- Comprehensive test suite (76 tests: unit, hook, component)
+- Comprehensive test suite (89 tests across 12 test files: unit, hook, component)
 - Normalized error types with a global error bus for toast notifications
 - Framer Motion staggered card animations
 
+**Intentional trade-off on Figma fidelity:** The product card is not pixel-perfect to the Figma design. I prioritized resilience engineering, caching strategy, and architecture over exact visual replication. The core layout, elements, and responsive behavior are all present with a polished glassmorphism aesthetic.
+
+**Live demo:** https://st-fe-assignment.vercel.app/
+
 **Left out (would prioritize next):**
+- **Pixel-perfect Figma match:** Given more time, I would refine spacing, typography, and card styling to match the Figma spec exactly.
 - **E2E tests with Playwright:** The unit and component tests cover logic and rendering, but browser-level tests would catch integration issues with routing, animations, and real network behavior.
 - **Full accessibility audit:** Semantic HTML, ARIA labels, and keyboard navigation are in place, but a screen-reader walkthrough and WCAG 2.1 AA contrast audit would be the next step.
 - **Optimistic pagination:** Currently shows a skeleton on page change. Could instead keep the old page visible with a subtle loading indicator for an even smoother feel.
